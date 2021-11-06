@@ -35,7 +35,8 @@ public class ZipAndMail {
          // Note that this time we are using a File class as an array,
          // instead of String
 	    File[] files = dir.listFiles(filter);
-	    File lastModified = Arrays.stream(files).filter(File::isDirectory).max(Comparator.comparing(File::lastModified)).orElse(null);
+	    File lastModified = getFileLastModified(files);
+	 //   File lastModified = Arrays.stream(files).filter(File::isDirectory).max(Comparator.comparing(File::lastModified)).orElse(null);
 		String srcFolder=lastModified.getAbsolutePath();
 		System.out.println("The src path is "+srcFolder);
 		String destFolder="C:\\FGFG\\restreports\\";
@@ -111,6 +112,21 @@ public class ZipAndMail {
 		} 
 		return null;
 		
+	}
+	
+	private static File getFileLastModified(File[] files) {
+	    File fileLastModified = null;
+	    long maxLastModified = Long.MIN_VALUE;
+	    for (File file : files) {
+	        if (file.isDirectory()) {
+	            final long lastModified = file.lastModified();
+	            if (lastModified > maxLastModified) {
+	                fileLastModified = file;
+	                maxLastModified = lastModified;
+	            }
+	        }
+	    }
+	    return fileLastModified;
 	}
 	
 

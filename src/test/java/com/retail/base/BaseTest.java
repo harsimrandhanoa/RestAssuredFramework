@@ -115,7 +115,7 @@ public class BaseTest {
 		Object[][] obj = null;
  		  try {
 		 obj = jsonData.getTestData(jsonDataPath,this.getClass().getSimpleName());
-		} catch (IOException | ParseException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
