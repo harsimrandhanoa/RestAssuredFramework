@@ -1,9 +1,7 @@
 package com.retail.base;
 
-
-
 public class Category {
-	
+
 	public String categoryname;
 
 	public String getCategoryname() {
@@ -13,6 +11,5 @@ public class Category {
 	public void setCategoryname(String categoryName) {
 		this.categoryname = categoryName;
 	}
-	
 
 }

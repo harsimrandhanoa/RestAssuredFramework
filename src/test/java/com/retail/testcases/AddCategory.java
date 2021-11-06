@@ -1,4 +1,5 @@
 package com.retail.testcases;
+
 import static io.restassured.RestAssured.given;
 
 import java.util.Hashtable;
@@ -16,48 +17,42 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class AddCategory extends BaseTest {
-	
+
 	@Test(dataProvider = "getJsonData")
-	public void addCategory(Hashtable<String,String> data){
-		
-			
-		
-		
+	public void addCategory(Hashtable<String, String> data) {
+
 		String categoryName = data.get("categoryname");
-		
-		Category c = new  Category();
-		
-		
+
+		Category c = new Category();
+
 		c.setCategoryname(categoryName);
-		
-		log("Adding category named "+categoryName);
-		
-		log("The session id in AddCategory tests is  "+sessionId);
-		
-		
-     Response resp = given().filter(new RequestLoggingFilter(requestCapture)).contentType(ContentType.JSON).headers("sessionid",sessionId).log().all().when().body(c).post();
 
+		log("Adding category named " + categoryName);
 
-    //.log().all().when().body(s).post();
+		log("The session id in AddCategory tests is  " + sessionId);
 
-		
-       resp.prettyPrint();
-	    
-	  log(resp.prettyPrint());
-	    
-      addRequestToLink(this.getClass().getSimpleName()+" Request",this.getClass().getSimpleName()+" Request-"+iteration,requestWriter.toString());
-	    
-      JsonPath extractor = resp.jsonPath();
-   	  String actualStatus = extractor.getString("status");
-   		
-   	  if(!actualStatus.equals("success")){
-   		   String errorMessage = extractor.getString("errMsg");
-           reportFailure("Failed to add category named   " +categoryName +" to db.The status is --> "+actualStatus +" and the error message we are getting is --> "+errorMessage, false);
-   	      
-   	    }
-		
-		
-		
+		Response resp = given().filter(new RequestLoggingFilter(requestCapture)).contentType(ContentType.JSON)
+				.headers("sessionid", sessionId).log().all().when().body(c).post();
+
+		// .log().all().when().body(s).post();
+
+		resp.prettyPrint();
+
+		log(resp.prettyPrint());
+
+		addRequestToLink(this.getClass().getSimpleName() + " Request",
+				this.getClass().getSimpleName() + " Request-" + iteration, requestWriter.toString());
+
+		JsonPath extractor = resp.jsonPath();
+		String actualStatus = extractor.getString("status");
+
+		if (!actualStatus.equals("success")) {
+			String errorMessage = extractor.getString("errMsg");
+			reportFailure("Failed to add category named   " + categoryName + " to db.The status is --> " + actualStatus
+					+ " and the error message we are getting is --> " + errorMessage, false);
+
+		}
+
 	}
 
 }
