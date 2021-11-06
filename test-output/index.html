@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RetailApp">
+              <span class="suite-name border-passed">RetailApp</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RetailApp">
+                    <span>C:\workspace\Framework_Rest1\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RetailApp">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RetailApp">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RetailApp">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RetailApp">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RetailApp">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RetailApp">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RetailApp" class="hide-methods passed suite-RetailApp"> (hide)</a> <!-- hide-methods passed suite-RetailApp -->
+                      <a href="#" panel-name="suite-RetailApp" class="show-methods passed suite-RetailApp"> (show)</a> <!-- show-methods passed suite-RetailApp -->
+                    </span>
+                    <div class="method-list-content passed suite-RetailApp">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.AddCategory" hash-for-method="addCategory({runmode=Y, categoryname=Computers})">addCategory({runmode=Y, categoryname=Computers})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.AddCategory" hash-for-method="addCategory({runmode=Y, categoryname=Bikes})">addCategory({runmode=Y, categoryname=Bikes})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.AddCategory" hash-for-method="addCategory({runmode=Y, categoryname=Books})">addCategory({runmode=Y, categoryname=Books})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.AddProduct" hash-for-method="addProduct({price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books})">addProduct({price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.AddProduct" hash-for-method="addProduct({price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers})">addProduct({price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.AddProduct" hash-for-method="addProduct({price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes})">addProduct({price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.LoginTest" hash-for-method="doLogin({expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran})">doLogin({expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetailApp" title="com.retail.testcases.LoginTest" hash-for-method="doLogin({expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin})">doLogin({expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RetailApp -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RetailApp" class="panel RetailApp">
+          <div class="suite-RetailApp-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.retail.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran})">
+                  </a> <!-- doLogin({expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin})">
+                  </a> <!-- doLogin({expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetailApp-class-passed -->
+          <div class="suite-RetailApp-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.retail.testcases.AddProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProduct({price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books})">
+                  </a> <!-- addProduct({price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books}) -->
+                  <span class="method-name">addProduct</span>
+                  <span class="parameters">({price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProduct({price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers})">
+                  </a> <!-- addProduct({price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers}) -->
+                  <span class="method-name">addProduct</span>
+                  <span class="parameters">({price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProduct({price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes})">
+                  </a> <!-- addProduct({price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes}) -->
+                  <span class="method-name">addProduct</span>
+                  <span class="parameters">({price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetailApp-class-passed -->
+          <div class="suite-RetailApp-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.retail.testcases.AddCategory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCategory({runmode=Y, categoryname=Computers})">
+                  </a> <!-- addCategory({runmode=Y, categoryname=Computers}) -->
+                  <span class="method-name">addCategory</span>
+                  <span class="parameters">({runmode=Y, categoryname=Computers})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCategory({runmode=Y, categoryname=Bikes})">
+                  </a> <!-- addCategory({runmode=Y, categoryname=Bikes}) -->
+                  <span class="method-name">addCategory</span>
+                  <span class="parameters">({runmode=Y, categoryname=Bikes})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCategory({runmode=Y, categoryname=Books})">
+                  </a> <!-- addCategory({runmode=Y, categoryname=Books}) -->
+                  <span class="method-name">addCategory</span>
+                  <span class="parameters">({runmode=Y, categoryname=Books})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetailApp-class-passed -->
+        </div> <!-- panel RetailApp -->
+        <div panel-name="test-xml-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\workspace\Framework_Rest1\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RetailApp&quot;&gt;
+  &lt;test name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.retail.testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test name=&quot;AddCategory&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.retail.testcases.AddCategory&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddCategory --&gt;
+  &lt;test name=&quot;AddProduct&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.retail.testcases.AddProduct&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddProduct --&gt;
+&lt;/suite&gt; &lt;!-- RetailApp --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RetailApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddCategory (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddProduct (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RetailApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RetailApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RetailApp');
+function tableData_RetailApp() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'doLogin')
+data.setCell(0, 2, 'com.retail.testcases.LoginTest')
+data.setCell(0, 3, 3895);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addCategory')
+data.setCell(1, 2, 'com.retail.testcases.AddCategory')
+data.setCell(1, 3, 173);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCategory')
+data.setCell(2, 2, 'com.retail.testcases.AddCategory')
+data.setCell(2, 3, 117);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addProduct')
+data.setCell(3, 2, 'com.retail.testcases.AddProduct')
+data.setCell(3, 3, 115);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addProduct')
+data.setCell(4, 2, 'com.retail.testcases.AddProduct')
+data.setCell(4, 3, 104);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addProduct')
+data.setCell(5, 2, 'com.retail.testcases.AddProduct')
+data.setCell(5, 3, 87);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'doLogin')
+data.setCell(6, 2, 'com.retail.testcases.LoginTest')
+data.setCell(6, 3, 73);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addCategory')
+data.setCell(7, 2, 'com.retail.testcases.AddCategory')
+data.setCell(7, 3, 69);
+window.suiteTableData['RetailApp']= { tableData: data, tableDiv: 'times-div-RetailApp'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-RetailApp">
+              </div> <!-- times-div-RetailApp -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RetailApp</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RetailApp" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.retail.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">1321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin({expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran})</span>
+                <span class="method-start">1333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">5241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">5848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin({expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin})</span>
+                <span class="method-start">5848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">5923 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.retail.testcases.AddCategory</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">6007 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">6013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCategory({runmode=Y, categoryname=Computers})</span>
+                <span class="method-start">6013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">6188 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">6224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCategory({runmode=Y, categoryname=Bikes})</span>
+                <span class="method-start">6224 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">6342 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">6360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCategory({runmode=Y, categoryname=Books})</span>
+                <span class="method-start">6360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">6430 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.retail.testcases.AddProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">6457 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">6460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProduct({price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers})</span>
+                <span class="method-start">6460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">6567 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">6589 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProduct({price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books})</span>
+                <span class="method-start">6589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">6678 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">6697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProduct({price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes})</span>
+                <span class="method-start">6698 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">6814 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

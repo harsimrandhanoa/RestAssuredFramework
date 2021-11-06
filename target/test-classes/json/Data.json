@@ -1,0 +1,54 @@
+{
+   "LoginTest":[
+	 {
+	  "runmode":"Y",
+	  "username":"harsimran",
+	  "password":"abc",
+	  "expectedstatus":"Login failed"
+	 },
+	 {
+	  "runmode":"Y",
+	  "username":"admin",
+	  "password":"whizdom",
+	  "expectedstatus":"Login succeed"
+	  
+	 }
+   ],	
+   "AddCategory":[
+	 {
+	  "runmode":"Y",
+	  "categoryname":"Computers"
+	 },
+	 {
+	  "runmode":"Y",
+	  "categoryname":"Bikes"
+	 },
+	 {
+	   "runmode":"Y",
+	   "categoryname":"Books"
+	 }
+    ],	
+	"AddProduct":[
+	 {
+	 "runmode":"Y",
+	 "productname":"Laptop",
+	 "categoryname":"Computers",
+	 "price":"100.00",
+	 "quantity":"2"
+	 },
+	 {
+	  "runmode":"Y",
+	  "productname":"Java book",
+	  "categoryname":"Books",
+	  "price":"12.00",
+	  "quantity":"10"
+	  },
+	  {
+	  "runmode":"Y",
+	  "productname":"Mountain Bike",
+	  "categoryname":"Bikes",
+	  "price":"25.00",
+	  "quantity":"20"
+	  }
+	  ]		
+	}
