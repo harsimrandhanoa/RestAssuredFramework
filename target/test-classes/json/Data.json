@@ -17,38 +17,61 @@
    "AddCategory":[
 	 {
 	  "runmode":"Y",
-	  "categoryname":"Computers"
+	  "categoryname":"PC11"
 	 },
 	 {
 	  "runmode":"Y",
-	  "categoryname":"Bikes"
+	  "categoryname":"Motorbikes1"
 	 },
 	 {
 	   "runmode":"Y",
-	   "categoryname":"Books"
+	   "categoryname":"eBooks1"
 	 }
     ],	
 	"AddProduct":[
 	 {
 	 "runmode":"Y",
-	 "productname":"Laptop",
-	 "categoryname":"Computers",
+	 "productname":"New Laptop1",
+	 "categoryname":"PC",
 	 "price":"100.00",
 	 "quantity":"2"
 	 },
 	 {
 	  "runmode":"Y",
-	  "productname":"Java book",
+	  "productname":"Python book1",
+	  "categoryname":"eBooks",
+	  "price":"12.00",
+	  "quantity":"10"
+	  },
+	  {
+	  "runmode":"Y",
+	  "productname":" New Mountain Bike1",
+	  "categoryname":"Motorbikes",
+	  "price":"25.00",
+	  "quantity":"20"
+	  }
+	  ],	
+	  "AddProduct1":[
+	 {
+	 "runmode":"Y",
+	 "productname":"Mining Laptop",
+	 "categoryname":"Computers",
+	 "price":"100.00",
+	 "quantity":"10"
+	 },
+	 {
+	  "runmode":"Y",
+	  "productname":"Python book",
 	  "categoryname":"Books",
 	  "price":"12.00",
 	  "quantity":"10"
 	  },
 	  {
 	  "runmode":"Y",
-	  "productname":"Mountain Bike",
+	  "productname":"Exercise Bike",
 	  "categoryname":"Bikes",
 	  "price":"25.00",
 	  "quantity":"20"
 	  }
-	  ]		
+	  ]			
 	}

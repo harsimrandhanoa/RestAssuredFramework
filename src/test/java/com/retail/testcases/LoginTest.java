@@ -4,10 +4,8 @@ import static io.restassured.RestAssured.given;
 
 import java.util.Hashtable;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
 //import com.aventstack.extentreports.Status;
 import com.retail.base.BaseTest;
 import com.retail.base.Session;
@@ -43,7 +41,6 @@ public class LoginTest extends BaseTest {
 		Response resp = given().filter(new RequestLoggingFilter(requestCapture)).contentType(ContentType.JSON).log()
 				.all().when().body(s).post();
 
-		resp.prettyPrint();
 
 		sessionId = resp.getHeader("sessionId");
 
@@ -63,14 +60,16 @@ public class LoginTest extends BaseTest {
 				reportFailure(
 						"Login should have failed with appropriate message but instead the message we are getting is  "
 								+ errorMessage + " and the login status is " + actualStatus,
-						false);
+						true);
 			}
 		}
 
 		if (expectedStatus.equals("Login succeed") && !sessionId.matches("^\\w+$")) {
-			reportFailure("Failed to login into session as sessionId is " + sessionId, false);
+			reportFailure("Failed to login into session as sessionId is " + sessionId, true);
 		}
-
+		
+        //If control reaches here i.e test did not fail
+		   testPass();
 	}
 
 }

@@ -41,12 +41,10 @@ public class ReadExcel {
 
 		XSSFSheet sheet = workbook.getSheet(sheetName);
 		if (sheet == null) {
-			System.out.println("No sheet found with the name " + sheetName);
 			return -1;
 		}
 
 		int rows = sheet.getLastRowNum() + 1;
-		System.out.println("The total rows are " + (rows));
 		return rows;
 
 	}

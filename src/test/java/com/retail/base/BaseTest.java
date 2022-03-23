@@ -12,7 +12,6 @@ import java.io.StringWriter;
 import java.util.Properties;
 
 import org.apache.commons.io.output.WriterOutputStream;
-import org.json.simple.parser.ParseException;
 import org.testng.Reporter;
 //import org.apache.commons.io.output.WriterOutputStream;
 import org.testng.annotations.AfterMethod;
@@ -24,7 +23,7 @@ import org.testng.asserts.SoftAssert;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.retail.testcases.ExtentManager;
+import com.retail.reporting.ExtentManager;
 //import com.aventstack.extentreports.ExtentReports;
 //import com.aventstack.extentreports.ExtentTest;
 import com.retail.util.DataUtil;
@@ -33,8 +32,6 @@ import com.retail.util.ReadExcel;
 import com.retail.util.ReadJsonData;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 
 public class BaseTest {
 
@@ -127,6 +124,10 @@ public class BaseTest {
 
 	public void log(String msg) {
 		test.log(Status.INFO, msg);
+	}
+	
+	public void testPass(){
+		test.log(Status.PASS,this.getClass().getSimpleName() + " has passed");
 	}
 
 	public void addRequestToLink(String message, String fileName, String Content)

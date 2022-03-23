@@ -16,7 +16,6 @@ public class DataUtil {
 		while (!xls.getCellData(sheetName, 1, testStartRowNum).equals(testName)) {
 			testStartRowNum++;
 		}
-		System.out.println("Test starts from row - " + testStartRowNum);
 
 		int colStartRowNum = testStartRowNum + 1;
 		int dataStartRowNum = testStartRowNum + 2;
@@ -27,7 +26,6 @@ public class DataUtil {
 			rows++;
 		}
 
-		System.out.println("Test rows of data are - " + rows);
 
 		int totalColumns = 0;
 
@@ -39,7 +37,6 @@ public class DataUtil {
 
 		totalColumns = cols;
 
-		System.out.println("Test cols of data are - " + totalColumns);
 
 		Object[][] data = new Object[rows][1];
 

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RetailApp" duration-ms="48476" started-at="2021-11-06T20:47:05 EDT" finished-at="2021-11-06T20:47:53 EDT">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="42843" started-at="2021-11-06T20:47:05 EDT" finished-at="2021-11-06T20:47:48 EDT">
+      <class name="com.retail.testcases.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="init" is-config="true" duration-ms="14962" started-at="2021-11-06T20:47:05 EDT" finished-at="2021-11-06T20:47:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="before" is-config="true" duration-ms="191" started-at="2021-11-06T20:47:21 EDT" finished-at="2021-11-06T20:47:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="doLogin" duration-ms="23579" started-at="2021-11-06T20:47:21 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:44 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{expectedstatus=Login failed, password=abc, runmode=Y, username=harsimran}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="after" is-config="true" duration-ms="3262" started-at="2021-11-06T20:47:44 EDT" finished-at="2021-11-06T20:47:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="before" is-config="true" duration-ms="1" started-at="2021-11-06T20:47:48 EDT" finished-at="2021-11-06T20:47:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="doLogin" duration-ms="104" started-at="2021-11-06T20:47:48 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:48 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{expectedstatus=Login succeed, password=whizdom, runmode=Y, username=admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.LoginTest@7d907bac]" name="after" is-config="true" duration-ms="23" started-at="2021-11-06T20:47:48 EDT" finished-at="2021-11-06T20:47:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.retail.testcases.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="AddCategory" duration-ms="3719" started-at="2021-11-06T20:47:48 EDT" finished-at="2021-11-06T20:47:52 EDT">
+      <class name="com.retail.testcases.AddCategory">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="init" is-config="true" duration-ms="1" started-at="2021-11-06T20:47:48 EDT" finished-at="2021-11-06T20:47:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="before" is-config="true" duration-ms="0" started-at="2021-11-06T20:47:48 EDT" finished-at="2021-11-06T20:47:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addCategory(java.util.Hashtable)[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="addCategory" duration-ms="3241" started-at="2021-11-06T20:47:48 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:51 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, categoryname=Computers}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="after" is-config="true" duration-ms="29" started-at="2021-11-06T20:47:51 EDT" finished-at="2021-11-06T20:47:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="before" is-config="true" duration-ms="0" started-at="2021-11-06T20:47:51 EDT" finished-at="2021-11-06T20:47:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addCategory(java.util.Hashtable)[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="addCategory" duration-ms="222" started-at="2021-11-06T20:47:51 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:51 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, categoryname=Bikes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="after" is-config="true" duration-ms="40" started-at="2021-11-06T20:47:51 EDT" finished-at="2021-11-06T20:47:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="before" is-config="true" duration-ms="2" started-at="2021-11-06T20:47:51 EDT" finished-at="2021-11-06T20:47:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addCategory(java.util.Hashtable)[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="addCategory" duration-ms="139" started-at="2021-11-06T20:47:51 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:52 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, categoryname=Books}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.AddCategory@9660f4e]" name="after" is-config="true" duration-ms="31" started-at="2021-11-06T20:47:52 EDT" finished-at="2021-11-06T20:47:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.retail.testcases.AddCategory -->
+    </test> <!-- AddCategory -->
+    <test name="AddProduct" duration-ms="1543" started-at="2021-11-06T20:47:52 EDT" finished-at="2021-11-06T20:47:53 EDT">
+      <class name="com.retail.testcases.AddProduct">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="init" is-config="true" duration-ms="2" started-at="2021-11-06T20:47:52 EDT" finished-at="2021-11-06T20:47:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="before" is-config="true" duration-ms="1" started-at="2021-11-06T20:47:52 EDT" finished-at="2021-11-06T20:47:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addProduct(java.util.Hashtable)[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="addProduct" duration-ms="519" started-at="2021-11-06T20:47:52 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:52 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{price=100.00, runmode=Y, quantity=2, productname=Laptop, categoryname=Computers}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="after" is-config="true" duration-ms="36" started-at="2021-11-06T20:47:52 EDT" finished-at="2021-11-06T20:47:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="before" is-config="true" duration-ms="0" started-at="2021-11-06T20:47:52 EDT" finished-at="2021-11-06T20:47:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addProduct(java.util.Hashtable)[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="addProduct" duration-ms="381" started-at="2021-11-06T20:47:52 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{price=12.00, runmode=Y, quantity=10, productname=Java book, categoryname=Books}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="after" is-config="true" duration-ms="59" started-at="2021-11-06T20:47:53 EDT" finished-at="2021-11-06T20:47:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="before" is-config="true" duration-ms="0" started-at="2021-11-06T20:47:53 EDT" finished-at="2021-11-06T20:47:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="addProduct(java.util.Hashtable)[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="addProduct" duration-ms="501" started-at="2021-11-06T20:47:53 EDT" data-provider="getJsonData" finished-at="2021-11-06T20:47:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{price=25.00, runmode=Y, quantity=20, productname=Mountain Bike, categoryname=Bikes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.retail.testcases.AddProduct@7d0587f1]" name="after" is-config="true" duration-ms="33" started-at="2021-11-06T20:47:53 EDT" finished-at="2021-11-06T20:47:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.retail.testcases.AddProduct -->
+    </test> <!-- AddProduct -->
+  </suite> <!-- RetailApp -->
+</testng-results>

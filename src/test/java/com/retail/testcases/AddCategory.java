@@ -6,8 +6,6 @@ import java.util.Hashtable;
 
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-//import com.aventstack.extentreports.Status;
 import com.retail.base.BaseTest;
 import com.retail.base.Category;
 
@@ -36,7 +34,7 @@ public class AddCategory extends BaseTest {
 
 		// .log().all().when().body(s).post();
 
-		resp.prettyPrint();
+		//resp.prettyPrint();
 
 		log(resp.prettyPrint());
 
@@ -49,9 +47,12 @@ public class AddCategory extends BaseTest {
 		if (!actualStatus.equals("success")) {
 			String errorMessage = extractor.getString("errMsg");
 			reportFailure("Failed to add category named   " + categoryName + " to db.The status is --> " + actualStatus
-					+ " and the error message we are getting is --> " + errorMessage, false);
+					+ " and the error message we are getting is --> " + errorMessage, true);
 
 		}
+		
+		//If control reaches here i.e test did not fail
+		testPass();
 
 	}
 

@@ -11,11 +11,6 @@ public class ProductDetails {
 	}
 
 	public void setProductDetails(Map<String, List<Product>> productdetails) {
-		// System.out.println("Finally in setProductDetails method. will set the
-		// Map passed as argument "
-		// + " equal to the Map in this class. and the map passed as argument is
-		// "+productdetails);
-
 		this.productDetails = productdetails;
 	}
 

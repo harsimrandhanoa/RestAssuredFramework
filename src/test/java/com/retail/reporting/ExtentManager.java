@@ -1,4 +1,4 @@
-package com.retail.testcases;
+package com.retail.reporting;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,18 +21,13 @@ public class ExtentManager {
 
 			reports = new ExtentReports();
 			// init the report folder
-			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 			Date date = new Date();
 			String folderName = date.toString().replace(":", "_ ").replace(" ", "_");
 			new File(path + folderName).mkdir();
-			new File(path + folderName + "\\log").mkdir(); // create a new
-															// directory named
-															// logs
-			BaseTest.reportFolder = path + folderName; // give this new folder
-														// name to reportFolder
+			new File(path + folderName + "\\log").mkdir(); // create a new directory named logs
+			BaseTest.reportFolder = path + folderName; // give this new folder name to reportFolder
 			String filename = path + folderName + "\\report.html";
-			System.out.println("===================>" + filename);
 			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(BaseTest.reportFolder);
 			sparkReporter.config().setReportName("Rest Asured Framework");
 			sparkReporter.config().setDocumentTitle("Rest Assured Framework Reports");
@@ -60,9 +55,7 @@ public class ExtentManager {
 			File f = new File(BaseTest.reportFolder);
 			f.mkdir();
 
-			new File(BaseTest.reportFolder + "\\log").mkdir(); // create a new
-																// directory
-																// named logs
+			new File(BaseTest.reportFolder + "\\log").mkdir(); // create a new directory named logs
 
 			try {
 				new File(BaseTest.reportFolder + "\\log\\").createNewFile();
